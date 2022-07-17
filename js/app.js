@@ -42,6 +42,7 @@ function backgroundColor(){
 
 function moveAstronaut(){
     let x= Math.floor(Math.random()*500)+1;
-    let one =  astronaut.style.transform = `translate(${x}px,${x}px)`;
+    let y=Math.floor(Math.random()*500)+1;
+    let one =  astronaut.style.transform = `translate(${x}px,${y}px)`;
     return one;
 }
