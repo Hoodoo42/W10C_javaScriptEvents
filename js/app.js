@@ -1,6 +1,6 @@
 // This EventListener Function will reveal the hint when (hint) is moused over
 function showHint(details){
-    hintHover[`style`][`display`] = `block`;
+     hintHover[`style`][`display`] = `block`;
 }
 
 let hint = document.getElementById(`hint`)
@@ -36,4 +36,12 @@ function backgroundColor(){
 }
 
 
+ setInterval(moveAstronaut, 3000)
 
+
+
+function moveAstronaut(){
+    let x= Math.floor(Math.random()*500)+1;
+    let one =  astronaut.style.transform = `translate(${x}px,${x}px)`;
+    return one;
+}
