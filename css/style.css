@@ -1,0 +1,64 @@
+@-webkit-keyframes revealAstronaut {
+  from {
+    bottom: 235px;
+  }
+  to {
+    bottom: 0px;
+  }
+}
+@keyframes revealAstronaut {
+  from {
+    bottom: 235px;
+  }
+  to {
+    bottom: 0px;
+  }
+}
+@-webkit-keyframes spinAstronaut {
+  from {
+    transform: rotate();
+  }
+  to {
+    transform: rotate(160deg);
+  }
+}
+@keyframes spinAstronaut {
+  from {
+    transform: rotate();
+  }
+  to {
+    transform: rotate(160deg);
+  }
+}
+header {
+  display: grid;
+  justify-items: center;
+}
+header > #joke, header #hint, header #hintHover {
+  text-align: center;
+}
+header > #logo, header #astronaut {
+  place-self: center;
+  display: none;
+}
+header > #astronaut {
+  z-index: -1;
+  position: relative;
+  -webkit-animation: revealAstronaut 3s ease-out, spinAstronaut 3s 3s ease-out forwards;
+          animation: revealAstronaut 3s ease-out, spinAstronaut 3s 3s ease-out forwards;
+}
+
+#jokeContainer {
+  display: grid;
+  justify-items: center;
+}
+#jokeContainer > p {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+#jokeContainer > #hintHover {
+  position: relative;
+  bottom: 75px;
+  display: none;
+}/*# sourceMappingURL=style.css.map */

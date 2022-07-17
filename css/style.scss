@@ -1,0 +1,57 @@
+
+@keyframes revealAstronaut{
+    from{
+        bottom: 235px;
+    }
+
+    to{
+        bottom: 0px;
+    }
+}
+
+@keyframes spinAstronaut{
+    from{
+        transform: rotate();
+    }
+    to{
+        transform: rotate(160deg);
+    }
+}
+
+header{
+display: grid;
+justify-items: center;
+    
+   
+    >#joke, #hint, #hintHover{
+        text-align: center;
+    }
+   
+  
+    >#logo, #astronaut{
+    place-self: center;
+    display: none;
+    }
+    >#astronaut{
+        z-index: -1;
+        position: relative;
+        animation: revealAstronaut 3s ease-out, spinAstronaut 3s 3s ease-out forwards;
+     
+    }
+
+}
+#jokeContainer{
+    display: grid;
+    justify-items: center;
+
+    >p{
+        width: fit-content;
+    }
+
+    >#hintHover{
+        position: relative;
+        bottom: 75px;
+        display: none;
+    }
+}
+
