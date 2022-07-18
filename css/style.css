@@ -37,6 +37,10 @@ header {
 header > #joke, header #hint, header #hintHover {
   text-align: center;
 }
+header > #spaceship {
+  display: none;
+  place-self: start;
+}
 header > #logo, header #astronaut {
   place-self: center;
   display: none;

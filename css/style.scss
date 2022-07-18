@@ -18,6 +18,8 @@
     }
 }
 
+
+
 header{
 display: grid;
 justify-items: center;
@@ -27,7 +29,13 @@ justify-items: center;
         text-align: center;
     }
    
-  
+    >#spaceship{
+        display: none;
+        
+        place-self: start;
+      
+    }
+                            
     >#logo, #astronaut{
     place-self: center;
     display: none;
